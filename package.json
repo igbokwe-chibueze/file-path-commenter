@@ -7,6 +7,28 @@
     "email": "igbokwechibuezeo@gmail.com",
     "url": "https://github.com/igbokwe-chibueze"
   },
+  "publisher": "igbokwe-chibueze",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igbokwe-chibueze/file-path-commenter/issues"
+  },
+  "bugs": {
+    "url": "https://github.com/igbokwe-chibueze/file-path-commenter"
+  },
+  "homepage": "https://github.com/igbokwe-chibueze/file-path-commenter#readme",
+  "keywords": [
+    "comment",
+    "file path",
+    "header comment",
+    "auto header",
+    "path commenter",
+    "source file path",
+    "code organization",
+    "vscode extension",
+    "breadcrumbs",
+    "workspace tools"
+  ],
+  "license": "MIT",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.99.0"
