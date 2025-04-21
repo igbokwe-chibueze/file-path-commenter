@@ -1,0 +1,53 @@
+{
+  "name": "file-path-commenter",
+  "displayName": "file-path-commenter",
+  "description": "file‑path‑commenter is a VS Code extension that automatically inserts the file’s relative path as a single‑line comment at the top of every newly created file and keeps it in sync whenever the file is moved or renamed. By leveraging VS Code’s workspace file events and best practices for Marketplace visibility, it ensures consistent, informative headers that aid navigation and project organization. Designed with both simplicity and accessibility in mind, file‑path‑commenter requires zero manual intervention.",
+  "author": {
+    "name": "Igbokwe Chibueze",
+    "email": "igbokwechibuezeo@gmail.com",
+    "url": "https://github.com/igbokwe-chibueze"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact",
+    "onCommand:filePathCommenter.refreshHeader"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "file-path-commenter.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.99.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
