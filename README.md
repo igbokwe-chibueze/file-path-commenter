@@ -88,10 +88,6 @@ Contributions are welcome! Please follow these guidelines:
 
 ### 1.0.0
 
-Initial release with automatic header insertion and live synchronization.
-
-### 1.1.0
-
 Added language-aware comment style.
 Configurable exclusion patterns.
 
